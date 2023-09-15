@@ -3,9 +3,8 @@ import os
 import datetime
 from discord import app_commands
 from discord.ext import tasks
-from dotenv import load_dotenv
 
-load_dotenv()
+DTOKEN = os.getenv("DTOKEN")
 
 intents = discord.Intents.default()
 bot = discord.Client(intents=intents)
